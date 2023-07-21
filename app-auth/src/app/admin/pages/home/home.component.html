@@ -1,0 +1,12 @@
+<div class="container-fluid shadow vh-100 d-flex justify-content-center align-items-center">
+    <form class="text-center bg-white rounded w-25 p-3">
+        <img class="mb-3" src="assets/logo.svg" width="120" height="100">
+
+        <div class="py-5">
+            <h4 class="text-danger">Logado com sucesso!</h4>
+        </div>
+
+        <a class="btn btn-lg btn-danger w-100 mb-3" [routerLink]="['account']">Account</a>
+        <a class="btn btn-lg btn-danger w-100 mb-3" (click)="logout()">Sair</a>
+    </form>
+</div>

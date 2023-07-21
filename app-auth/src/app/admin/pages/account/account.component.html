@@ -1,0 +1,61 @@
+<div class="container-fluid shadow vh-100 d-flex justify-content-center align-items-center" *ngIf="tema === 'light'">
+    <form class="text-center bg-white rounded w-75 p-3">
+        <img class="mb-3" src="assets/logo.svg" width="120" height="100">
+
+        <div class="icons-tema">
+            <i class="fa-solid fa-sun fa-2xl text-dark"></i>
+            <i class="fa-regular fa-moon fa-2xl text-dark" (click)="mudarTema()"></i>
+        </div>
+
+        <div class="text-card p-3 my-3">
+            <pre class="text-secondary text-start text-break fw-light lh-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique diam ac magna porta ornare. 
+                Nam molestie, nibh eu tincidunt feugiat, enim magna sagittis mauris, in dictum nisl turpis at tortor. 
+                Fusce luctus massa felis, quis pulvinar turpis viverra vulputate. Sed ac eros in lectus euismod ornare. Donec placerat pulvinar volutpat. 
+                Donec a ex euismod, interdum velit at, ullamcorper nunc. Nunc iaculis imperdiet magna porttitor blandit. 
+                In ligula justo, dictum ut nisi a, sollicitudin tempor tortor. Sed efficitur volutpat tellus, molestie dignissim lectus varius nec. 
+                Pellentesque viverra ultrices sem, et imperdiet ante aliquet nec. Mauris odio velit, facilisis eget pellentesque eget, iaculis luctus augue. 
+                Proin mi nulla, luctus bibendum consequat ac, maximus vel tortor. Pellentesque sodales tempus velit id viverra. Quisque a finibus metus, et euismod ex.
+
+                Integer mollis, enim tempus vehicula auctor, quam justo hendrerit libero, et feugiat nisi turpis eget ante. Proin ac semper dui. 
+                Praesent interdum dui neque, id porttitor massa dapibus a. Suspendisse sollicitudin, ex sed placerat tempus, nulla nisl venenatis erat, id mollis mauris est non metus. 
+                Aliquam sed nisl quis nisl fermentum viverra vel ut lacus. Nam tincidunt tortor ac vestibulum malesuada. Morbi quis lorem pretium, bibendum quam auctor, auctor velit. 
+                Vivamus finibus, libero ac consectetur consectetur, metus lorem ullamcorper arcu, at feugiat libero urna at ante. Ut fringilla in felis eget cursus. 
+                Maecenas rhoncus sem id aliquam commodo. Cras at condimentum nulla. Fusce aliquet leo at augue rhoncus elementum. Phasellus sit amet orci at mi congue scelerisque.
+            </pre>
+        </div>
+
+        <a class="btn btn-lg btn-danger w-100 mb-3" [routerLink]="['/admin']">Voltar</a>
+    </form>
+</div>
+
+<div class="container-fluid shadow vh-100 d-flex justify-content-center align-items-center" *ngIf="tema === 'dark'">
+    <form class="text-center bg-dark rounded w-75 p-3">
+        <img class="mb-3" src="assets/logo.svg" width="120" height="100">
+
+        <div class="icons-tema">
+            <i class="fa-regular fa-sun fa-2xl text-white" (click)="mudarTema()"></i>
+            <i class="fa-solid fa-moon fa-2xl text-white"></i>
+        </div>
+
+        <div class="text-card p-3 my-3">
+            <pre class="text-light text-start text-break fw-light lh-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique diam ac magna porta ornare. 
+                Nam molestie, nibh eu tincidunt feugiat, enim magna sagittis mauris, in dictum nisl turpis at tortor. 
+                Fusce luctus massa felis, quis pulvinar turpis viverra vulputate. Sed ac eros in lectus euismod ornare. Donec placerat pulvinar volutpat. 
+                Donec a ex euismod, interdum velit at, ullamcorper nunc. Nunc iaculis imperdiet magna porttitor blandit. 
+                In ligula justo, dictum ut nisi a, sollicitudin tempor tortor. Sed efficitur volutpat tellus, molestie dignissim lectus varius nec. 
+                Pellentesque viverra ultrices sem, et imperdiet ante aliquet nec. Mauris odio velit, facilisis eget pellentesque eget, iaculis luctus augue. 
+                Proin mi nulla, luctus bibendum consequat ac, maximus vel tortor. Pellentesque sodales tempus velit id viverra. Quisque a finibus metus, et euismod ex.
+
+                Integer mollis, enim tempus vehicula auctor, quam justo hendrerit libero, et feugiat nisi turpis eget ante. Proin ac semper dui. 
+                Praesent interdum dui neque, id porttitor massa dapibus a. Suspendisse sollicitudin, ex sed placerat tempus, nulla nisl venenatis erat, id mollis mauris est non metus. 
+                Aliquam sed nisl quis nisl fermentum viverra vel ut lacus. Nam tincidunt tortor ac vestibulum malesuada. Morbi quis lorem pretium, bibendum quam auctor, auctor velit. 
+                Vivamus finibus, libero ac consectetur consectetur, metus lorem ullamcorper arcu, at feugiat libero urna at ante. Ut fringilla in felis eget cursus. 
+                Maecenas rhoncus sem id aliquam commodo. Cras at condimentum nulla. Fusce aliquet leo at augue rhoncus elementum. Phasellus sit amet orci at mi congue scelerisque.
+            </pre>
+        </div>
+
+        <a class="btn btn-lg btn-danger w-100 mb-3" [routerLink]="['/admin']">Voltar</a>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+.icons-tema i {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.text-card {
+    overflow: auto;
+    max-height: 500px !important;
+}

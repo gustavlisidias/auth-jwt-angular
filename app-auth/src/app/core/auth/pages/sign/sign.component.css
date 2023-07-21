@@ -1,0 +1,41 @@
+#inputEmail {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+#inputSenha {
+    border-top: 0px;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#btnEntrar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #dc3545;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.25);
+}
+
+.form-check-input:not(:checked):focus {
+    background-color: transparent;
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.25);
+}
+
+.form-check-input:not(:checked):not(focus) {
+    background-color: transparent;
+    box-shadow: transparent;
+}
